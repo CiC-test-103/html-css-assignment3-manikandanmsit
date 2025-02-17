@@ -1,12 +1,14 @@
 /** Variable Imports **/
-@import './variables.css';
+@import "./variables.css";
 
 /**
   CSS Reset
   Source: https://www.joshwcomeau.com/css/custom-css-reset/
 **/
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /* 2. Remove default margin */
@@ -20,34 +22,165 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 /* 5. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 /* 6. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 /* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 /* 8. Improve line wrapping */
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 /*
   9. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 /** Your CSS Below **/
 
+/* Apply styles to the body */
+body {
+  /*background-color: #ffffff; /* Set background color */
+  background: #eed8e3;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  width: 100%; /* Set width to 100% of the viewport */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* You can style other elements as needed */
+.container {
+  width: 80%; /* Set container width */
+  height: 80vh; /* Set container height */
+  margin: 0 auto; /* Center the container horizontally */
+  background-color: #ffffff; /* Set a background color for the container */
+  padding: 20px; /* Add padding inside the container */
+}
+
+/* Apply styles to the table */
+table {
+  background-color: white; /* Set the table's background color to white */
+  width: 50%; /* Optional: set the table width */
+  border-collapse: collapse; /* Optional: collapse borders for a cleaner look */
+  margin: 0 auto;
+  margin-top: 100px; /* Add 50px space at the top */
+  margin-bottom: 100px; /* Add 50px space at the bottom */
+  border-radius: 15px; /* Curves the corners of the entire table */
+  overflow: hidden; /* Ensures the corners of the table are rounded */
+}
+
+/* Optional: Style the table header */
+th {
+  background-color: #f2f2f2; /* Light gray background for the table header */
+  padding: 10px; /* Add padding for spacing */
+  text-align: left; /* Align text to the left */
+}
+
+/* Optional: Style the table cells */
+td {
+  padding: 20px; /* Add padding to the table cells */
+  border: 0px solid #ddd; /* Optional: add border to table cells */
+}
+
+/* Center the image horizontally */
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 15px; /* Curves the corners of the entire table */
+  overflow: hidden; /* Ensures the corners of the table are rounded */
+}
+
+h1 {
+  color: #000000; /* Hot pink color */
+  font-family: Verdana, Arial, Helvetica, sans-serif; /* Arial font */
+  font-size: 20px; /* Font size 48px */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center the text */
+}
+
+h3 {
+  color: #3f1e04; /* Set the color of the text */
+  font-family: Verdana, Arial, Helvetica, sans-serif; /* Set the font style */
+  font-size: 13px; /* Set the font size */
+  font-weight: bold; /* Optional: Make the text bold */
+  text-align: left; /* Optional: Center the heading */
+}
+
+p {
+  color: #000000; /*  color */
+  font-family: Arial, Helvetica, sans-serif; /* Arial font */
+  font-size: 14px; /* Font size 48px */
+  font-weight: normal; /* Bold text */
+  text-align: left; /* Center the text */
+}
 /** Attribution CSS **/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.div {
+  text-align: left;
+  color: #000000; /*  color */
+  font-family: Arial, Helvetica, sans-serif; /* Arial font */
+  font-size: 14px; /* Font size 48px */
+}
+
+.line {
+  height: 2px;
+  background-color: #d3cfd1; /* Pink color */
+  margin: 10px 0;
+}
+
+.preparePG {
+  background-color: #d3cfd1; /* Pink color */
+  margin: 10px 0;
+  border-radius: 15px; /* Curves the corners of the entire table */
+  overflow: hidden; /* Ensures the corners of the table are rounded */
+}
+
+h2 {
+  color: #3f1e04; /* Set the color of the text */
+  font-family: Verdana, Arial, Helvetica, sans-serif; /* Set the font style */
+  font-size: 13px; /* Set the font size */
+  font-weight: bold; /* Optional: Make the text bold */
+  /*text-align: left; /* Optional: Center the heading */
+}
+
+/** Attribution CSS **/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
